@@ -1,0 +1,83 @@
+.form {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: rgb(169, 159, 192);
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid rgb(93, 56, 179);
+}
+
+.form > * {
+  flex: 0 0 20%;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: transform 0.2s;
+  position: relative;
+  border: 1px solid rgb(97, 102, 34);
+  cursor: pointer;
+  background-color: rgb(220, 231, 60);
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(#000, 0.3);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.3);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.hero-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(93, 56, 179);
+  background-color: rgb(169, 159, 192);
+}
+
+.btn-ability {
+  margin-top: 7px;
+  border: 1px solid rgb(97, 102, 34);
+  cursor: pointer;
+  background-color: rgb(220, 231, 60);
+  border-radius: 1000px;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+.btn-ability:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(#000, 0.4);
+}
+.success {
+  color: rgb(1, 117, 1);
+}
+
+.fail {
+  color: red;
+}
+
+.btn-attack {
+  text-align: center;
+}

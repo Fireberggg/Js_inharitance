@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <form action="submit" class="form">
+    <h1>Create your hero</h1>
+    <div class="getNameForm">
+      <label for="getName">Hero name: </label>
+      <input
+        type="text"
+        class="getName"
+        name="getName"
+        placeholder="hero name"
+        required
+      />
+    </div>
+    <div class="getTypeForm">
+      <label for="getType">Hero type: </label>
+      <select class="getType" name="getType">
+        <option value="Champion">Champion</option>
+        <option value="Monster">Monster</option>
+      </select>
+    </div>
+    <div class="getTypeSumbit">
+      <input type="submit" value="Create Hero" class="btn" />
+    </div>
+  </form>
+  <div class="attack-form">
+    <label for="selectTarget">Select hero to attack: </label>
+    <select class="selectTarget" name="selectTarget">
+      <option value="heracles">heracles</option>
+      <option value="boar">boar</option>
+      <option value="your-hero">your hero</option>
+    </select>
+  </div>
+  <div class="hero-container"></div>
+  <body>
+    <script src="creature.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
